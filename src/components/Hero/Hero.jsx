@@ -9,6 +9,7 @@ import {
 import bgImg from '../../assets/vr-gaming.gif';
 import TypeWriterEffect from 'react-typewriter-effect'
 
+
 const Hero = () => {
 
 
@@ -39,7 +40,6 @@ const Hero = () => {
         <div className='w-full'>
           <img src={bgImg} alt="/"/>
         </div>
-
       </div>
     </div>
     </>
