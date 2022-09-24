@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
+
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import { mail, MailIcon } from '@heroicons/react/solid'
+
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -8,7 +10,16 @@ const Navbar = () => {
 
     const handleEmail = () => {
         window.open('mailto:KassandraEam@gmail.com')
-      }
+    };
+
+    const handleGitHub = () => {
+        window.open("https://github.com/Kassandraeam")
+    };
+
+    const handleLinkedIn = () => {
+        window.open("https://www.linkedin.com/in/kas-eam-9b9299138/")
+    }
+    
     return (
         <div>
             <div>
@@ -21,12 +32,12 @@ const Navbar = () => {
                         <li>Home</li>
                         <li>About</li>
                         <li>Experience</li>
-                        <li>GitHub</li>
-                        <li>LinkedIn</li>
+                        <li>Projects</li>
+                        <button className='border-none bg-transparent text-black ml-2 mr-5' onClick={handleGitHub}>GitHub</button>
+                        <button className='border-none bg-transparent text-black mr-5' onClick={handleLinkedIn}>LinkedIn</button>
                     </ul>
                 </div>
                 <div className='hidden md:flex pr-4'>
-                    {/* <button className='border-none bg-transparent text-black mr-4'>Sign In</button> */}
                     <button className='flex px-8 py-3' onClick={handleEmail}><MailIcon className='h-6 mr-2'/>Say Hello!</button>
                 </div>
 
@@ -39,7 +50,8 @@ const Navbar = () => {
                 <li className='border-b-2 border-zinc-300 w-full'>Home</li>
                 <li className='border-b-2 border-zinc-300 w-full'>About</li>
                 <li className='border-b-2 border-zinc-300 w-full'>Experience</li>
-                <li className='border-b-2 border-zinc-300 w-full'>GitHub</li>
+                <li className='border-b-2 border-zinc-300 w-full'>Projects</li>
+                <button className='border-b-2 border-zinc-300 w-full bg-indigo-600'>GitHub</button>
                 <li className='border-b-2 border-zinc-300 w-full'>LinkedIn</li>
                 <div className='flex flex-col my-4'>
                     {/* <button className='bg-transparent text-black px-8 py-3 mb-4'>Sign In</button> */}
