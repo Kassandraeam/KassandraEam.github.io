@@ -51,8 +51,8 @@ const Navbar = () => {
                 <li className='border-b-2 border-zinc-300 w-full'>About</li>
                 <li className='border-b-2 border-zinc-300 w-full'>Experience</li>
                 <li className='border-b-2 border-zinc-300 w-full'>Projects</li>
-                <button className='border-b-2 border-zinc-300 w-full bg-indigo-600'>GitHub</button>
-                <li className='border-b-2 border-zinc-300 w-full'>LinkedIn</li>
+                <li className='border-b-2 border-zinc-300 w-full' onClick={handleGitHub}>GitHub</li>
+                <li className='border-b-2 border-zinc-300 w-full' onClick={handleLinkedIn}>LinkedIn</li>
                 <div className='flex flex-col my-4'>
                     {/* <button className='bg-transparent text-black px-8 py-3 mb-4'>Sign In</button> */}
                     <button className='px-8 py-3' onClick={handleEmail}>Let's Connect!</button>

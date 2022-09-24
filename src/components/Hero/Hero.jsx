@@ -5,7 +5,8 @@ import {
   PaperAirplaneIcon,
   ServerIcon,
 } from '@heroicons/react/solid'
-import bgImg from '../../assets/futuristic-technology.gif';
+// import bgImg from '../../assets/futuristic-technology.gif';
+import bgImg from '../../assets/vr-gaming.gif';
 import TypeWriterEffect from 'react-typewriter-effect'
 
 const Hero = () => {
@@ -31,7 +32,7 @@ const Hero = () => {
               loop = {true}
               />
           </div>
-          <p className='text-1xl'>I'm a Full Stack Software engineer and future Kendama legend based in Minneapolis.</p>
+          <p className='text-1xl'>I'm a Full Stack Software Engineer and future Kendama legend based in Minneapolis.</p>
           <p className='text-1xl'>I have a passion for science, tech, diversity and inclusion, and problem solving.</p>
           <button className='py-3 px-6 sm:w-[60%] my-4'>Let's Get Started!</button>
         </div>
