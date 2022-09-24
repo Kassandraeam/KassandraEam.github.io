@@ -9,6 +9,9 @@ import bgImg from '../../assets/futuristic-technology.gif';
 import TypeWriterEffect from 'react-typewriter-effect'
 
 const Hero = () => {
+
+
+
   return (
     <>
     <div>Hero</div>
@@ -19,18 +22,23 @@ const Hero = () => {
           <div className = 'py-3 text-5xl md:text-7xl font-bold'>
               <TypeWriterEffect
               startDelay={10}
-              cursorColor="black"
+              cursorColor="blue"
+              cursorThickness={100}
               text="Hi, I'm Kas!"
               typeSpeed={100}
-              eraseSpeed={100}/>
+              eraseSpeed={100}
+              autoStart={true}
+              loop = {true}
+              />
           </div>
           <p className='text-1xl'>I'm a Full Stack Software engineer and future Kendama legend based in Minneapolis.</p>
           <p className='text-1xl'>I have a passion for science, tech, diversity and inclusion, and problem solving.</p>
-          <button className='py-3 px-6 sm:w-[60%] my-4'>Get started</button>
+          <button className='py-3 px-6 sm:w-[60%] my-4'>Let's Get Started!</button>
         </div>
         <div className='w-full'>
           <img src={bgImg} alt="/"/>
         </div>
+
       </div>
     </div>
     </>
