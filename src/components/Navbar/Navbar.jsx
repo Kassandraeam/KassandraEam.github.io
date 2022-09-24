@@ -6,6 +6,9 @@ const Navbar = () => {
     const handleClick = () => setNav(!nav)
 
     return (
+        <div>
+            <div>
+            </div>
         <div className="w-screen h-[80px] bg-zinc-200 fixed drop-shadlow-lg">
             <div className="px-2 flex justify-between items-center w-full h-full">
                 <div className="flex items-center">
@@ -41,6 +44,7 @@ const Navbar = () => {
                     <button className='px-8 py-3'>Sign Up</button>
                 </div>
             </ul>
+        </div>
         </div>
     )
 }
