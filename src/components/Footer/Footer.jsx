@@ -2,7 +2,12 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <>
+    
+    <p className='flex justify-center mt-10'>© Built and designed by Kas Eam</p>
+    
+
+    </>
   )
 }
 

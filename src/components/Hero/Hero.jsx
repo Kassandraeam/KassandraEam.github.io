@@ -12,11 +12,9 @@ import TypeWriterEffect from 'react-typewriter-effect'
 
 const Hero = () => {
 
-
-
   return (
     <>
-    <div>Hero</div>
+    <div>😈</div>
     <div className='w-full h-screen bg-zinc-280 flex flex-col justify-between'>
       <div className='grid md:grid-cols-2 max-w-[1240px] m-auto'>
         <div className='flex flex-col justify-center md:items-start w-full px-2 py-8'>
@@ -25,7 +23,6 @@ const Hero = () => {
               <TypeWriterEffect
               startDelay={10}
               cursorColor="blue"
-              cursorThickness={100}
               text="Hi, I'm Kas!"
               typeSpeed={100}
               eraseSpeed={100}
