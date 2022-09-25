@@ -1,0 +1,13 @@
+.nav {
+    z-index: 500;
+
+    height: 60px;
+
+    width: 100%;
+
+    position: fixed;
+
+    top: 0;
+
+    bottom: 0;
+}

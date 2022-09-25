@@ -1,95 +1,104 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from 'react'
+import Timeline from '@mui/lab/Timeline';
+import TimelineItem from '@mui/lab/TimelineItem';
+import TimelineSeparator from '@mui/lab/TimelineSeparator';
+import TimelineConnector from '@mui/lab/TimelineConnector';
+import TimelineContent from '@mui/lab/TimelineContent';
+import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
+import TimelineDot from '@mui/lab/TimelineDot';
+import AddAlarmIcon from '@mui/icons-material/AddAlarm';
+import LaptopMacIcon from '@mui/icons-material/LaptopMac';
+import HotelIcon from '@mui/icons-material/Hotel';
+import RepeatIcon from '@mui/icons-material/Repeat';
+import Typography from '@mui/material/Typography';
 
-import TimelineObserver from "react-timeline-animation";
-import { fireConfetti } from "./confetti";
 
-import "./styles.css";
+import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 
-const Timeline = ({ setObserver, callback }) => {
-  const [message1, setMessage1] = useState("");
-  const [message2, setMessage2] = useState("");
-  const [message3, setMessage3] = useState("");
 
-  const timeline1 = useRef(null);
-  const timeline2 = useRef(null);
-  const timeline3 = useRef(null);
-  const circle1 = useRef(null);
-  const circle2 = useRef(null);
-  const circle3 = useRef(null);
 
-  const someCallback = () => {
-    setMessage1("Step one");
-    callback();
-  };
+import About from '../About/About';
+import Experience from '../Experience/Experience';
+import ExampleProjects from '../ExampleProjects/ExampleProjects';
 
-  const someCallback2 = () => {
-    setMessage2("Step two");
-  };
 
-  const someCallback3 = () => {
-    setMessage3("Finish");
-    fireConfetti();
-  };
-
-  useEffect(() => {
-    setObserver(timeline1.current);
-    setObserver(timeline2.current);
-    setObserver(timeline3.current);
-    setObserver(circle1.current, someCallback);
-    setObserver(circle2.current, someCallback2);
-    setObserver(circle3.current, someCallback3);
-  }, []);
-
+const TimelineComponent = () => {
   return (
-    <div className="wrapper">
-      <div id="timeline1" ref={timeline1} className="timeline" />
-      <div className="circleWrapper">
-        <div id="circle1" ref={circle1} className="circle">
-          1
-        </div>
-        <div className="message">{message1}</div>
-      </div>
-      <div id="timeline2" ref={timeline2} className="timeline" />
-      <div className="circleWrapper">
-        <div id="circle2" ref={circle2} className="circle">
-          2
-        </div>
-        <div className="message">{message2}</div>
-      </div>
-      <div id="timeline3" ref={timeline3} className="timeline" />
-      <div className="circleWrapper">
-        <div id="circle3" ref={circle3} className="circle">
-          3
-        </div>
-        <div className="message">{message3}</div>
-      </div>
-    </div>
-  );
-};
+    <Timeline position="alternate">
+      <TimelineItem>
+        <TimelineOppositeContent
+          sx={{ m: 'auto 0' }}
+          align="right"
+          variant="body2"
+          color="text.secondary"
+        >
 
-export default function App() {
-  const [message, setMessage] = useState("");
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot>
+            <AutoAwesomeIcon color="primary" />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: '12px', px: 2 }}>
+          <Typography variant="h6" component="span">
+          </Typography>
+          <About />
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent
+          sx={{ m: 'auto 0' }}
+          variant="body2"
+          color="text.secondary"
+        >
 
-  const onCallback = () => {
-    console.log("awesome");
-  };
-
-  return (
-    <div className="App">
-      <h1>react-scroll-animation component</h1>
-      <div className="stub1">⬇️ scroll to start ⬇️</div>
-      <TimelineObserver
-        initialColor="#e5e5e5"
-        fillColor="black"
-        handleObserve={(setObserver) => (
-          <Timeline
-            callback={onCallback}
-            className="timeline"
-            setObserver={setObserver}
-          />
-        )}
-      />
-      <div className="stub2">{message}</div>
-    </div>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot color="primary">
+            <LaptopMacIcon />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: '12px', px: 2 }}>
+          <Typography variant="h6" component="span">
+          </Typography>
+          <Experience />
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot color="primary" variant="outlined">
+            <HotelIcon />
+          </TimelineDot>
+          <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: '12px', px: 2 }}>
+          <Typography variant="h6" component="span">
+          </Typography>
+          <ExampleProjects />
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
+          <TimelineDot color="secondary">
+            <RepeatIcon />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: '12px', px: 2 }}>
+          <Typography variant="h6" component="span">
+            Repeat
+          </Typography>
+          <Typography>Because this is the life you love!</Typography>
+        </TimelineContent>
+      </TimelineItem>
+    </Timeline>
   );
 }
+
+export default TimelineComponent

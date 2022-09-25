@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './Navbar.css'
 
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import { mail, MailIcon } from '@heroicons/react/solid'
@@ -23,7 +24,7 @@ const Navbar = () => {
     }
 
     return (
-        <div>
+        <div className='nav'>
             <div>
             </div>
             <div className="w-screen h-[80px] bg-zinc-200 fixed drop-shadlow-lg">
