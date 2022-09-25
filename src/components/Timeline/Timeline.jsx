@@ -6,7 +6,7 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
-import AddAlarmIcon from '@mui/icons-material/AddAlarm';
+import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import LaptopMacIcon from '@mui/icons-material/LaptopMac';
 import HotelIcon from '@mui/icons-material/Hotel';
 import RepeatIcon from '@mui/icons-material/Repeat';
@@ -14,12 +14,10 @@ import Typography from '@mui/material/Typography';
 
 
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
-
-
-
 import About from '../About/About';
 import Experience from '../Experience/Experience';
 import ExampleProjects from '../ExampleProjects/ExampleProjects';
+
 
 
 const TimelineComponent = () => {
@@ -36,8 +34,9 @@ const TimelineComponent = () => {
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
-          <TimelineDot>
-            <AutoAwesomeIcon color="primary" />
+          <TimelineDot color="secondary" variant="outlined">
+            {/* STAR */}
+            <AutoAwesomeIcon /> 
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -57,7 +56,8 @@ const TimelineComponent = () => {
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
-          <TimelineDot color="primary">
+          <TimelineDot color="secondary" variant="outlined">
+            {/* MAC */}
             <LaptopMacIcon />
           </TimelineDot>
           <TimelineConnector />
@@ -71,10 +71,11 @@ const TimelineComponent = () => {
       <TimelineItem>
         <TimelineSeparator>
           <TimelineConnector />
-          <TimelineDot color="primary" variant="outlined">
-            <HotelIcon />
+          {/* BED */}
+          <TimelineDot color="secondary" variant="outlined">
+            <AccountTreeIcon />
           </TimelineDot>
-          <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
+          <TimelineConnector/>
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
           <Typography variant="h6" component="span">
@@ -84,17 +85,8 @@ const TimelineComponent = () => {
       </TimelineItem>
       <TimelineItem>
         <TimelineSeparator>
-          <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
-          <TimelineDot color="secondary">
-            <RepeatIcon />
-          </TimelineDot>
-          <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
-          <Typography variant="h6" component="span">
-            Repeat
-          </Typography>
-          <Typography>Because this is the life you love!</Typography>
         </TimelineContent>
       </TimelineItem>
     </Timeline>
