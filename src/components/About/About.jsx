@@ -21,12 +21,26 @@ const About = () => {
     
                 <div className='flex flex-col'>
     
-                    <p className='text-3xl font-semibold text-[#4F45E4] ml-20'>// ABOUT</p>
+                    <p className='text-3xl font-semibold text-indigo-600'>✧ ABOUT</p>
     
-                    <div className='m-10'>
+                    <div className='m-5'>
     
-                        <div className='flex flex-col mx-10'>
-                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        <div className='flex flex-col'>
+                            <p>You already know my name and what I'm passionate about, so I'll tell you about some of the technologies I've been using:</p>
+                            <div className='columns-2 mt-4 ml-6'>
+                                <ul>
+                                   <span> 
+                                    <li><span className='text-indigo-600'>▷</span> JavaScript</li>
+                                    <li><span className='text-indigo-600'>▷</span> React.JS</li>
+                                    <li><span className='text-indigo-600'>▷</span> Redux</li>
+                                    <li><span className='text-indigo-600'>▷</span> Redux-Sagas</li>
+                                    <li><span className='text-indigo-600'>▷</span> PostgreSQL</li>
+                                    <li><span className='text-indigo-600'>▷</span> Node</li>
+                                    <li><span className='text-indigo-600'>▷</span> jQuery</li>
+                                    <li><span className='text-indigo-600'>▷</span> Material-UI</li>
+                                    </span>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

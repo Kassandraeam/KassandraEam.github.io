@@ -4,15 +4,15 @@ import 'animate.css';
 const Experience = () => {
     return (
         <>
-            <p className='text-3xl font-semibold text-[#4F45E4] ml-20 flex justify-start'>// EXPERIENCE</p>
+            <p className='text-3xl font-semibold text-indigo-600 flex justify-start'>✧ EXPERIENCE</p>
 
             <div className='flex flex-col'>
 
 
                 <div className='m-10'>
 
-                    <div className='flex flex-col mx-10'>
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    <div className='flex flex-col'>
+                        <p>I've recently completed a full-time, accelerated software development program at Prime Digital Academy! Prior to that, I was a QA Tester at Activision. If you'd like the full scope of my experience, feel free to download my resume on the right!</p>
                     </div>
                 </div>
             </div>

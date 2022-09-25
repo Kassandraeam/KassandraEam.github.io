@@ -52,8 +52,8 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className='hidden md:flex pr-4 space-x-4'>
-                        {/* <button className='flex px-8 py-3' onClick={handleEmail}><MailIcon className='h-6 mr-2' />Say Hello!</button>
-                        <button className='flex px-8 py-3' onClick={handleEmail}><MailIcon className='h-6 mr-2' />Resume!</button> */}
+                        <button className='flex px-8 py-3' onClick={handleEmail}><MailIcon className='h-6 mr-2' />Say Hello!</button>
+                        {/* <button className='flex px-8 py-3' onClick={handleEmail}><MailIcon className='h-6 mr-2' />Resume!</button> */}
                     </div>
 
                     <div className='md:hidden' onClick={handleClick}>

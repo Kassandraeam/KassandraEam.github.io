@@ -11,9 +11,11 @@ import LaptopMacIcon from '@mui/icons-material/LaptopMac';
 import HotelIcon from '@mui/icons-material/Hotel';
 import RepeatIcon from '@mui/icons-material/Repeat';
 import Typography from '@mui/material/Typography';
+import { saveAs } from "file-saver";
+
 
 import bgImg from '../Timeline/Spaceship.gif';
-
+import DownloadIcon from '@mui/icons-material/Download';
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import About from '../About/About';
 import Experience from '../Experience/Experience';
@@ -22,6 +24,11 @@ import ExampleProjects from '../ExampleProjects/ExampleProjects';
 
 
 const TimelineComponent = () => {
+  const saveFile = () => {
+    saveAs(
+      "https://drive.google.com/file/d/1FjhTDiy7NL3ZvroLLppqtvgmykRGkqXK/view?usp=sharing"
+    );
+  };
   return (
     <Timeline position="alternate">
       <TimelineItem>
@@ -65,9 +72,7 @@ const TimelineComponent = () => {
           variant="body2"
           color="text.secondary"
         >
-          <div className='flex justify-center object-scale-down h-48 w-96 ml-10'>
-            <img src={bgImg} alt="/" />
-          </div>
+          <button className='flex py-10 px-10 ml-40' onClick={saveFile}><DownloadIcon className='h-6 mr-2' />Resume!</button>
 
 
 
