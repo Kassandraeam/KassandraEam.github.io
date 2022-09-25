@@ -1,9 +1,10 @@
 import React from 'react'
+import 'animate.css';
 
 const Experience = () => {
     return (
         <>
-            <p className='text-3xl font-semibold text-[#4E63E1ff] ml-20 flex justify-start'>// EXPERIENCE</p>
+            <p className='text-3xl font-semibold text-[#4F45E4] ml-20 flex justify-start'>// EXPERIENCE</p>
 
             <div className='flex flex-col'>
 

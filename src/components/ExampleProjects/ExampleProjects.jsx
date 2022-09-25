@@ -1,4 +1,5 @@
 import React from 'react'
+import 'animate.css';
 
 const ExampleProjects = () => {
     return (
@@ -6,7 +7,7 @@ const ExampleProjects = () => {
 
             <div className='flex flex-col'>
 
-                <p className='text-3xl font-semibold text-[#4E63E1ff] ml-20'>// EXAMPLE PROJECTS</p>
+                <p className='text-3xl font-semibold text-[#4F45E4] ml-20'>// EXAMPLE PROJECTS</p>
 
                 <div className='m-10'>
 

@@ -3,6 +3,8 @@ import './Navbar.css'
 
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import { mail, MailIcon } from '@heroicons/react/solid'
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 
 const Navbar = () => {
@@ -30,18 +32,28 @@ const Navbar = () => {
             <div className="w-screen h-[80px] bg-zinc-200 fixed drop-shadlow-lg">
                 <div className="px-2 flex justify-between items-center w-full h-full">
                     <div className="flex items-center">
-                        <h1 className="text-3xl font-bold mr-4 sm:text-4xl">PORTFOLIO.</h1>
+                        <div className='portfolio'>
+                            <h1 className="text-3xl font-bold mr-4 sm:text-4xl">PORTFOLIO.</h1>
+                        </div>
                         <ul className='hidden md:flex'>
                             <li>Home</li>
                             <li>About</li>
                             <li>Experience</li>
                             <li>Projects</li>
-                            <button className='border-none bg-transparent text-black ml-2 mr-5' onClick={handleGitHub}>GitHub</button>
-                            <button className='border-none bg-transparent text-black mr-5' onClick={handleLinkedIn}>LinkedIn</button>
+                            <span className='inline-flex items-baseline ml-2'>
+                                <GitHubIcon className='pt-1' fontSize='inherit' />
+                                <button className='border-none bg-transparent text-black mr-5 mt-4' onClick={handleGitHub}>GitHub</button>
+                            </span>
+
+                            <span className='inline-flex items-baseline '>
+                                <LinkedInIcon className='pt-1' fontSize='inherit' />
+                                <button className='border-none bg-transparent text-black mr-5 mt-4' onClick={handleLinkedIn}>LinkedIn</button>
+                            </span>
                         </ul>
                     </div>
-                    <div className='hidden md:flex pr-4'>
-                        <button className='flex px-8 py-3' onClick={handleEmail}><MailIcon className='h-6 mr-2' />Say Hello!</button>
+                    <div className='hidden md:flex pr-4 space-x-4'>
+                        {/* <button className='flex px-8 py-3' onClick={handleEmail}><MailIcon className='h-6 mr-2' />Say Hello!</button>
+                        <button className='flex px-8 py-3' onClick={handleEmail}><MailIcon className='h-6 mr-2' />Resume!</button> */}
                     </div>
 
                     <div className='md:hidden' onClick={handleClick}>
@@ -59,6 +71,7 @@ const Navbar = () => {
                     <div className='flex flex-col my-4'>
                         {/* <button className='bg-transparent text-black px-8 py-3 mb-4'>Sign In</button> */}
                         <button className='px-8 py-3' onClick={handleEmail}>Let's Connect!</button>
+                        <button className='px-8 py-3'>Resume!</button>
                     </div>
                 </ul>
             </div>

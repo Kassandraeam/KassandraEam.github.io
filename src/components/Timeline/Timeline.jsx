@@ -12,6 +12,7 @@ import HotelIcon from '@mui/icons-material/Hotel';
 import RepeatIcon from '@mui/icons-material/Repeat';
 import Typography from '@mui/material/Typography';
 
+import bgImg from '../Timeline/Spaceship.gif';
 
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import About from '../About/About';
@@ -30,6 +31,9 @@ const TimelineComponent = () => {
           variant="body2"
           color="text.secondary"
         >
+          <div className='flex justify-center object-scale-down h-48 w-96 ml-10'>
+            <img src={bgImg} alt="/"/>
+          </div>
 
         </TimelineOppositeContent>
         <TimelineSeparator>
