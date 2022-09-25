@@ -1,0 +1,17 @@
+.nav {
+    z-index: 500;
+
+    height: 60px;
+
+    width: 100%;
+
+    position: fixed;
+
+    top: 0;
+
+    bottom: 0;
+}
+
+.portfolio{
+    color: #4F45E4;
+}
