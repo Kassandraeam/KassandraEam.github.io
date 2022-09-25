@@ -24,10 +24,9 @@ const Hero = () => {
 
   return (
     <>
-      <div>😈</div>
       <div className='w-full h-screen bg-zinc-280 flex flex-col justify-between'>
         <div className='grid md:grid-cols-2 max-w-[1240px] m-auto'>
-          <div className='flex flex-col justify-center md:items-start w-full px-2 py-8'>
+          <div className='flex flex-col justify-center md:items-start w-full px-2 py-8 mb-20'>
             <p className='text-2xl justify mt-5'>Full Stack Software Engineer</p>
             <div className='py-3 text-5xl md:text-7xl font-bold'>
               <TypeWriterEffect
@@ -50,7 +49,7 @@ const Hero = () => {
             </div>
 
           </div>
-          <div className='w-full'>
+          <div className='w-full mb-20'>
             <img src={bgImg} alt="/" />
           </div>
         </div>
@@ -70,3 +69,4 @@ export default Hero;
   ../../ = Two directories backwards
 
 */
+

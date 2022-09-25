@@ -5,7 +5,7 @@ import TimelineComponent from "./components/Timeline/Timeline";
 import Experience from "./components/Experience/Experience";
 import ExampleProjects from "./components/ExampleProjects/ExampleProjects";
 import Footer from "./components/Footer/Footer";
-
+import TestComponent from "./components/TestComponent/TestComponent";
 
 
 function App() {
@@ -14,18 +14,10 @@ function App() {
   return (
     <>
       <Navbar />
-  
+      <TestComponent/>
       <Hero />
-
-      {/* <About />
-
-      <Experience />
-
-      <ExampleProjects /> */}
       <TimelineComponent/>
       <Footer />
-
-
     </>
   );
 }
