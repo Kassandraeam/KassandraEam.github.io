@@ -39,7 +39,7 @@ const Hero = () => {
                 loop={true}
               />
             </div>
-            <p className='text-1xl'>I'm a <span className='text-indigo-600'>Full Stack Software Engineer</span> and future Kendama legend based in <span className='text-indigo-600'>Minneapolis</span>.</p>
+            <p className='text-1xl'>I'm a <span className='text-indigo-600 font-semibold'>Full Stack Software Engineer</span> and future Kendama legend based in <span className='text-indigo-600 font-semibold'>Minneapolis</span>.</p>
             <p className='text-1xl'>I have a passion for science, tech, diversity and inclusion, and problem solving.</p>
             {/* <button className='py-3 px-6 sm:w-[60%] my-4'>Let's Get Started!</button> */}
 
