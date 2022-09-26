@@ -14,6 +14,7 @@ import { saveAs } from "file-saver";
 
 
 import bgImg from '../Timeline/Spaceship.gif';
+import Resume from '../Timeline/Resume.gif';
 import DownloadIcon from '@mui/icons-material/Download';
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import About from '../About/About';
@@ -31,6 +32,7 @@ const TimelineComponent = () => {
       "https://drive.google.com/file/d/1FjhTDiy7NL3ZvroLLppqtvgmykRGkqXK/view?usp=sharing"
     );
   };
+  
   return (
     <Timeline position="alternate">
       <TimelineItem>
@@ -41,7 +43,7 @@ const TimelineComponent = () => {
           color="text.secondary"
         >
           <div className='flex justify-center object-scale-down h-48 w-96 ml-10'>
-            <img src={bgImg} alt="/" />
+            <img src={bgImg} alt="/" onClick/>
           </div>
 
         </TimelineOppositeContent>
@@ -76,9 +78,10 @@ const TimelineComponent = () => {
           variant="body2"
           color="text.secondary"
         >
-          <button className='flex py-10 px-10 ml-40' onClick={saveFile}><DownloadIcon className='h-6 mr-2' />Resume!</button>
 
-
+          <div id = 'ResumeImg' className='flex justify-center object-scale-down h-48 w-96 ml-10'>
+            <img src={Resume} alt="/" onClick={saveFile}/>
+          </div>
 
         </TimelineOppositeContent>
         </TimelineOppositeContent>
