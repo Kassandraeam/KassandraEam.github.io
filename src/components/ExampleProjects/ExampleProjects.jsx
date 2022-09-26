@@ -11,8 +11,8 @@ const ExampleProjects = () => {
 
                 <div className='m-10'>
 
-                    <div className='flex flex-col'>
-                        <p>Here are some of applications that I've created! Keep an eye out on my GitHub for future projects! :D </p>
+                    <div className='flex flex-col '>
+                        <p>Here are some of applications that I've created! Keep an eye out on my <span className='text-indigo-600'>GitHub</span> for future projects! :D </p>
                     </div>
                 </div>
 

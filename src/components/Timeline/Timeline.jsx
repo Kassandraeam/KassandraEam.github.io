@@ -22,6 +22,7 @@ import Experience from '../Experience/Experience';
 import ExampleProjects from '../ExampleProjects/ExampleProjects';
 import 'animate.css';
 import Carousel from '../CarouselComponent/Carousel';
+import CardComponent from '../Cardcomponent/Cardcomponent';
 
 
 
@@ -43,7 +44,7 @@ const TimelineComponent = () => {
           color="text.secondary"
         >
           <div className='flex justify-center object-scale-down h-48 w-96 ml-10'>
-            <img src={bgImg} alt="/" onClick/>
+            <img src={bgImg} alt="/"/>
           </div>
 
         </TimelineOppositeContent>
@@ -111,8 +112,8 @@ const TimelineComponent = () => {
           {/* <div className='flex justify-center object-scale-down h-48 w-96 ml-10'>
             <img src={bgImg} alt="/" />
           </div> */}
-          <Carousel/>
-
+          {/* <Carousel/> */}
+          <CardComponent/>
 
 
         </TimelineOppositeContent>

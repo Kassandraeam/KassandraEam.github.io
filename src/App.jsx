@@ -7,6 +7,7 @@ import ExampleProjects from "./components/ExampleProjects/ExampleProjects";
 import Footer from "./components/Footer/Footer";
 import TestComponent from "./components/TestComponent/TestComponent";
 import Carousel from "./components/CarouselComponent/Carousel";
+import Cardcomponent from "./components/Cardcomponent/Cardcomponent";
 
 
 function App() {
