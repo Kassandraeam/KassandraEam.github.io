@@ -45,3 +45,6 @@
     font-weight: bold;
   }
   
+  #ResumeImg {
+      cursor: url(images/droplet.svg), auto;
+  }

@@ -6,6 +6,7 @@ import Experience from "./components/Experience/Experience";
 import ExampleProjects from "./components/ExampleProjects/ExampleProjects";
 import Footer from "./components/Footer/Footer";
 import TestComponent from "./components/TestComponent/TestComponent";
+import Carousel from "./components/CarouselComponent/Carousel";
 
 
 function App() {

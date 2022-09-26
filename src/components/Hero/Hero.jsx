@@ -27,7 +27,7 @@ const Hero = () => {
       <div className='w-full h-screen bg-zinc-280 flex flex-col justify-between'>
         <div className='grid md:grid-cols-2 max-w-[1240px] m-auto'>
           <div className='flex flex-col justify-center md:items-start w-full px-2 py-8 mb-20'>
-            <p className='text-2xl justify mt-5'>Full Stack Software Engineer</p>
+            <p className='text-3xl justify mt-5'>Full Stack Software Engineer</p>
             <div className='py-3 text-5xl md:text-7xl font-bold'>
               <TypeWriterEffect
                 startDelay={10}
@@ -39,13 +39,13 @@ const Hero = () => {
                 loop={true}
               />
             </div>
-            <p className='text-1xl'>I'm a Full Stack Software Engineer and future Kendama legend based in Minneapolis.</p>
+            <p className='text-1xl'>I'm a <span className='text-indigo-600'>Full Stack Software Engineer</span> and future Kendama legend based in <span className='text-indigo-600'>Minneapolis</span>.</p>
             <p className='text-1xl'>I have a passion for science, tech, diversity and inclusion, and problem solving.</p>
             {/* <button className='py-3 px-6 sm:w-[60%] my-4'>Let's Get Started!</button> */}
 
             <div className='flex flex-row space-x-4 mt-4'>
-              <button className='flex px-8 py-3 mr-4' onClick={handleEmail}><MailIcon className='h-6 mr-2' />Say Hello!</button>
-              <button className='flex px-8 py-3' onClick={saveFile}><DownloadIcon className='h-6 mr-2' />Resume!</button>
+              {/* <button className='flex px-8 py-3 mr-4' onClick={handleEmail}><MailIcon className='h-6 mr-2' />Say Hello!</button> */}
+            {/* <button className='flex px-8 py-3' onClick={saveFile}><DownloadIcon className='h-6 mr-2' />Resume!</button> */}
             </div>
 
           </div>
