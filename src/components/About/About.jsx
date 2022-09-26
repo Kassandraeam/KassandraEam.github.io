@@ -25,21 +25,23 @@ const About = () => {
     
                     <div className='m-5'>
     
-                        <div className='flex flex-col'>
-                            <p>You already know my name and what I'm passionate about, so I'll tell you about some of the technologies I've been using:</p>
-                            <div className='columns-2 mt-4 ml-6'>
-                                <ul>
-                                   <span> 
-                                    <li><span className='text-indigo-600'>▷</span> JavaScript</li>
-                                    <li><span className='text-indigo-600'>▷</span> React.JS</li>
-                                    <li><span className='text-indigo-600'>▷</span> Redux</li>
-                                    <li><span className='text-indigo-600'>▷</span> Redux-Sagas</li>
-                                    <li><span className='text-indigo-600'>▷</span> PostgreSQL</li>
-                                    <li><span className='text-indigo-600'>▷</span> Node</li>
-                                    <li><span className='text-indigo-600'>▷</span> jQuery</li>
-                                    <li><span className='text-indigo-600'>▷</span> Material-UI</li>
-                                    </span>
-                                </ul>
+                        <div className='animate__slideInRight'>
+                            <div className='flex flex-col'>
+                                <p>You already know my name and what I'm passionate about, so I'll tell you about some of the technologies I've been using:</p>
+                                <div className='columns-2 mt-4 ml-14'>
+                                    <ul>
+                                       <span> 
+                                        <li><span className='text-indigo-600'>▷</span> JavaScript</li>
+                                        <li><span className='text-indigo-600'>▷</span> React.JS</li>
+                                        <li><span className='text-indigo-600'>▷</span> Redux</li>
+                                        <li><span className='text-indigo-600'>▷</span> Redux-Sagas</li>
+                                        <li><span className='text-indigo-600'>▷</span> PostgreSQL</li>
+                                        <li><span className='text-indigo-600'>▷</span> Node</li>
+                                        <li><span className='text-indigo-600'>▷</span> jQuery</li>
+                                        <li><span className='text-indigo-600'>▷</span> Material-UI</li>
+                                        </span>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -8,8 +8,7 @@ import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import LaptopMacIcon from '@mui/icons-material/LaptopMac';
-import HotelIcon from '@mui/icons-material/Hotel';
-import RepeatIcon from '@mui/icons-material/Repeat';
+
 import Typography from '@mui/material/Typography';
 import { saveAs } from "file-saver";
 
@@ -20,10 +19,13 @@ import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import About from '../About/About';
 import Experience from '../Experience/Experience';
 import ExampleProjects from '../ExampleProjects/ExampleProjects';
+import 'animate.css';
+import Carousel from '../CarouselComponent/Carousel';
 
 
 
 const TimelineComponent = () => {
+  
   const saveFile = () => {
     saveAs(
       "https://drive.google.com/file/d/1FjhTDiy7NL3ZvroLLppqtvgmykRGkqXK/view?usp=sharing"
@@ -54,7 +56,9 @@ const TimelineComponent = () => {
         <TimelineContent sx={{ py: '12px', px: 2 }}>
           <Typography variant="h6" component="span">
           </Typography>
+
           <About />
+
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
@@ -101,9 +105,10 @@ const TimelineComponent = () => {
           variant="body2"
           color="text.secondary"
         >
-          <div className='flex justify-center object-scale-down h-48 w-96 ml-10'>
+          {/* <div className='flex justify-center object-scale-down h-48 w-96 ml-10'>
             <img src={bgImg} alt="/" />
-          </div>
+          </div> */}
+          <Carousel/>
 
 
 
