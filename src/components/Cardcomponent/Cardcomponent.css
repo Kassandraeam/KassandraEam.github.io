@@ -1,0 +1,144 @@
+/* body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #151515;
+    color: #151515;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+} */
+
+/* ======================== */
+
+.card {
+    background-color: #444444;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    color: #b3b3b3;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    padding: 10px;
+    /* background: url('https://www.greenfieldreporter.com/wp-content/uploads/2022/09/129683037_web1_WEB-ICON-Calendar.jpeg') center no-repeat; */
+    background-size: cover;
+    border-radius: 20px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.card #assemble {
+    background: url('https://img.freepik.com/premium-vector/vertical-timeline-infographics-diagram-dashed-line-with-circle-icons_55310-92.jpg?w=2000') center no-repeat;
+}
+.card::before,
+.card::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: calc(60% + 35px);
+    background-color: rgb(255, 255, 255);
+    transition: transform .5s.25s ease-in;
+    z-index: -1;
+}
+
+.card::before {
+    top: 0;
+    clip-path:
+        polygon(0 0, 100% 0, 100% 45%, 0% 100%);
+    transform: translateY(-100%);
+}
+
+.card::after {
+    bottom: 0;
+    clip-path: polygon(0 55%, 100% 0, 100% 100%, 0% 100%);
+    transform: translateY(100%);
+}
+
+.card__content {
+    opacity: 0;
+    transition: opacity .25s;
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    
+}
+
+.card__title {
+    color: #6A515E;
+    margin-bottom: 15PX;
+}
+
+.card__description {
+    font-size: 14px;
+}
+
+.card:hover::before,
+.card:hover::after {
+    transform: translateY(0);
+}
+
+.card:hover .card__content {
+    opacity: 1;
+    transition-delay: .75s;
+}
+
+/* .card {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    color: #a18a96;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    padding: 10px;
+    background: url('') center no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.card__content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    transform:translateY(70px);
+    transition: transform .25px;
+}
+
+.card__content::before {
+    content: '';
+    position: absolute;
+    top: -47px;
+    right: -45px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-175deg);
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: inset 48px 48px #fff;
+}
+
+.card__title {
+    color: #6A515E;
+    margin-bottom: 15PX;
+}
+
+.card_subtitle {
+    display: block;
+    font-size: 14px;
+    transition: opacity .5s;
+}
+
+.card:hover .card_content {
+    transform: translateY(0);
+}
+
+.card:hover .card_description {
+    opacity: 1;
+    transition-delay: .25s;
+} */
+

@@ -27,7 +27,7 @@ const About = () => {
     
                         <div className='animate__slideInRight'>
                             <div className='flex flex-col'>
-                                <p>You already know my name and what I'm passionate about, so I'll tell you about some of the technologies I've been using:</p>
+                                <p>You already know my name and what I'm <span className='text-indigo-600 font-semibold'>passionate</span> about, so I'll tell you about some of the <span className='text-indigo-600 font-semibold'>technologies</span> I've been using:</p>
                                 <div className='columns-2 mt-4 ml-14'>
                                     <ul>
                                        <span> 
