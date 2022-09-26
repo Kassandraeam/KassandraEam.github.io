@@ -6,7 +6,6 @@ import { mail, MailIcon } from '@heroicons/react/solid'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
-
 const Navbar = () => {
     const [nav, setNav] = useState(false);
     const handleClick = () => setNav(!nav)
@@ -42,12 +41,12 @@ const Navbar = () => {
                             <li>Projects</li>
                             <span className='inline-flex items-baseline ml-2'>
                                 <GitHubIcon className='pt-1' fontSize='inherit' />
-                                <button className='border-none bg-transparent text-black mr-5 mt-4' onClick={handleGitHub}>GitHub</button>
+                                <button className='border-none bg-transparent text-black mr-5 mt-4 font-semibold' onClick={handleGitHub}>GitHub</button>
                             </span>
 
                             <span className='inline-flex items-baseline '>
                                 <LinkedInIcon className='pt-1' fontSize='inherit' />
-                                <button className='border-none bg-transparent text-black mr-5 mt-4' onClick={handleLinkedIn}>LinkedIn</button>
+                                <button className='border-none bg-transparent text-black mr-5 mt-4 font-semibold' onClick={handleLinkedIn}>LinkedIn</button>
                             </span>
                         </ul>
                     </div>
