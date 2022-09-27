@@ -49,14 +49,17 @@ const TimelineComponent = () => {
             </div>
   
           </TimelineOppositeContent>
+
+
           <TimelineSeparator>
             <TimelineConnector />
             <TimelineDot color="secondary" variant="outlined">
-              {/* STAR */}
-              <AutoAwesomeIcon />
+              <AutoAwesomeIcon /> {/* STAR */}
             </TimelineDot>
             <TimelineConnector />
           </TimelineSeparator>
+
+
           <TimelineContent sx={{ py: '12px', px: 2 }}>
             <Typography variant="h6" component="span">
             </Typography>
