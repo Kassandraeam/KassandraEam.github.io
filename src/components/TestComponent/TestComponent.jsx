@@ -7,7 +7,7 @@ const TestComponent = () => {
     const completion = useReadingProgress();
 
     return (
-        <nav className="py-6 sticky top-0">
+        <nav className="py-6 sticky top-0 z-10">
             <div className="flex items-center justify-between container mx-auto text-xl">
                 <a href="/" className='text-white'>Kas Eam</a>
                 <div className="flex gap-8">

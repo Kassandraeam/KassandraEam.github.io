@@ -1,4 +1,10 @@
 #bar {
     z-index: 500;
-    background-image: linear-gradient(90deg,#4E63E1ff,#FEFEFFff, #226695ff, #EBE6FAff, #772BDCff)
+    /* background-image: linear-gradient(90deg,blue, blue, blue, blue, blue) */
+    /* background-image: linear-gradient(90deg,#4E63E1ff,#FEFEFFff, #226695ff, #EBE6FAff, #772BDCff) */
+};
+#bar {
+    z-index: 500;
+    /* background-image: linear-gradient(90deg,blue, blue, blue, blue, blue) */
+    background-image: linear-gradient(90deg,rgb(0, 38, 255),rgb(0, 38, 255), rgb(0, 38, 255), rgb(0, 38, 255), rgb(0, 38, 255))
 };
