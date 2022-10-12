@@ -26,8 +26,7 @@ const Navbar = () => {
 
     return (
         <div className='nav'>
-            <div>
-            </div>
+
             <div className="w-screen h-[80px] bg-zinc-200 fixed drop-shadlow-lg">
                 <div className="px-2 flex justify-between items-center w-full h-full">
                     <div className="flex items-center">
@@ -74,6 +73,7 @@ const Navbar = () => {
                     </div>
                 </ul>
             </div>
+            
         </div>
     )
 }

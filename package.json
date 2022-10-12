@@ -1,5 +1,5 @@
 {
-  "homepage": "http://{kassandraeam}.github.io/{portfolio-website",
+  "homepage": "https://kassandraeam.github.io/react-gh-pages",
   "name": "portfolio-website",
   "version": "0.1.0",
   "private": true,
@@ -59,6 +59,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.12",
+    "gh-pages": "^4.0.0",
     "postcss": "^8.4.16",
     "tailwindcss": "^3.1.8"
   }
