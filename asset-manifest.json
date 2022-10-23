@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.2e567fff.css",
-    "main.js": "/react-gh-pages/static/js/main.a14e1703.js",
-    "static/media/vr-gaming.gif": "/react-gh-pages/static/media/vr-gaming.767879fd1149ae2fbf7f.gif",
-    "static/media/design-and-development-process.png": "/react-gh-pages/static/media/design-and-development-process.c3773d52fc3d0e6695a3.png",
-    "static/media/Spaceship.gif": "/react-gh-pages/static/media/Spaceship.08838b909b513d9b4929.gif",
-    "static/media/Resume.gif": "/react-gh-pages/static/media/Resume.b35e2cc1aa5d8ae2b159.gif",
-    "index.html": "/react-gh-pages/index.html",
-    "main.2e567fff.css.map": "/react-gh-pages/static/css/main.2e567fff.css.map",
-    "main.a14e1703.js.map": "/react-gh-pages/static/js/main.a14e1703.js.map"
+    "main.css": "/static/css/main.2e567fff.css",
+    "main.js": "/static/js/main.fbfc3ae0.js",
+    "static/media/vr-gaming.gif": "/static/media/vr-gaming.767879fd1149ae2fbf7f.gif",
+    "static/media/design-and-development-process.png": "/static/media/design-and-development-process.c3773d52fc3d0e6695a3.png",
+    "static/media/Spaceship.gif": "/static/media/Spaceship.08838b909b513d9b4929.gif",
+    "static/media/Resume.gif": "/static/media/Resume.b35e2cc1aa5d8ae2b159.gif",
+    "index.html": "/index.html",
+    "main.2e567fff.css.map": "/static/css/main.2e567fff.css.map",
+    "main.fbfc3ae0.js.map": "/static/js/main.fbfc3ae0.js.map"
   },
   "entrypoints": [
     "static/css/main.2e567fff.css",
-    "static/js/main.a14e1703.js"
+    "static/js/main.fbfc3ae0.js"
   ]
 }
